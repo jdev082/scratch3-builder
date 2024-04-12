@@ -4,5 +4,8 @@
     "turbo": "true",
     "html": {
         "out": "project.html"
+    },
+    "android": {
+        "out": "android"
     }
 }

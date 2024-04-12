@@ -16,14 +16,22 @@ let writeHtmlLocal = async (r, o="out.html") => {
    return;
 }
 
-let mkHtmlLocal = async (f="project.sb3", o) => {
+let appendHtmlLocal = async (r, o="out.html") => {
+   fs.appendFile(o, r.data, (error) => {
+      console.log(`ERR: ${error}`)
+   })
+   return; 
+}
+
+let mkHtmlLocal = async (f="project.sb3", o, t) => {
    const projectData = fs.readFileSync(f);
    const loadedProject = await Packager.loadProject(projectData);
    const packager = new Packager.Packager();
    packager.options.turbo = config.get("turbo");
    packager.project = loadedProject;
    const result = await packager.package();
-   writeHtmlLocal(result, o);
+   //writeHtmlLocal(result, o);
+   appendHtmlLocal(result, o);
    return;
 }
 

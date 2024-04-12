@@ -27,6 +27,8 @@
   "homepage": "https://github.com/jdev082/scratch-builder#readme",
   "dependencies": {
     "@turbowarp/packager": "2.0.0",
-    "config": "^3.3.11"
+    "androidjs": "^2.0.6",
+    "config": "^3.3.11",
+    "git-clone": "^0.2.0"
   }
 }
