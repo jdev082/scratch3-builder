@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { mkHtmlLocal } = require('./mkhtml.js')
 const config = require('config');
 
