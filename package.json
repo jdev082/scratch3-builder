@@ -1,0 +1,30 @@
+{
+  "name": "@scratch-forge/mkhtml",
+  "version": "1.0.0",
+  "description": "Builds a Scratch project into an HTML file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdev082/sf-mkhtml.git"
+  },
+  "keywords": [
+    "Scratch",
+    "HTML",
+    "TurboWarp"
+  ],
+  "bin": {
+    "mkhtml": "index.js"
+  },
+  "author": "jdev082",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdev082/sf-mkhtml/issues"
+  },
+  "homepage": "https://github.com/jdev082/sf-mkhtml#readme",
+  "dependencies": {
+    "@turbowarp/packager": "2.0.0"
+  }
+}
