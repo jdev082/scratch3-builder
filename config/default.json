@@ -1,3 +1,7 @@
 {
-    "makers": ["html"]
+    "makers": ["html"],
+    "input": "project.sb3",
+    "html": {
+        "out": "project.html"
+    }
 }

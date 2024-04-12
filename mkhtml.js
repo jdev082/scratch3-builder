@@ -33,3 +33,4 @@ if (require.main === module) {
    mkHtmlLocal(process.argv[2], process.argv[3])
 }
 
+module.exports = {mkHtmlLocal}
