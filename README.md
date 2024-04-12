@@ -1,6 +1,7 @@
-# ScratchForge MkHTML
-HTML maker for ScratchForge
+# ScratchForge
+Easily build your Scratch projects for several platforms
 # Usage
 ```
-mkhtml file.sb3 output.html
+sf-mkhtml file.sb3 output.html
+sf-build (uses config)
 ```
