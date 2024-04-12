@@ -1,5 +1,5 @@
 {
-  "name": "@scratch-forge/mkhtml",
+  "name": "sf-mkhtml",
   "version": "1.0.0",
   "description": "Builds a Scratch project into an HTML file",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "TurboWarp"
   ],
   "bin": {
-    "mkhtml": "index.js"
+    "sf-mkhtml": "./mkhtml.js"
   },
   "author": "jdev082",
   "license": "MIT",
