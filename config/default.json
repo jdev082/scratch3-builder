@@ -1,8 +1,12 @@
 {
-    "makers": ["html"],
+    "makers": ["html", "electron"],
     "input": "project.sb3",
     "turbo": "true",
     "html": {
         "out": "project.html"
+    },
+    "electron": {
+        "out": "electron",
+        "template": "https://github.com/jdev082/sb-electron-template"
     }
 }
