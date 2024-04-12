@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* 
    ScratchForge "makeweb"
    Builds a Scratch game into an HTML page
