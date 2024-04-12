@@ -17,7 +17,7 @@
   ],
   "bin": {
     "sf-mkhtml": "./mkhtml.js",
-    "sf-make": "./index.js"
+    "sf-make": "./make.js"
   },
   "author": "jdev082",
   "license": "MIT",
