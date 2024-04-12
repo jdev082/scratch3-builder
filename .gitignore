@@ -1,3 +1,4 @@
 *.html
 *.sb3
 node_modules
+electron
