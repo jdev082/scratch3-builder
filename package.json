@@ -1,5 +1,5 @@
 {
-  "name": "sf-mkhtml",
+  "name": "scratchforge",
   "version": "1.0.0",
   "description": "Builds a Scratch project into an HTML file",
   "main": "index.js",
