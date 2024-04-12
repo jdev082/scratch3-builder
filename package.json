@@ -16,7 +16,8 @@
     "TurboWarp"
   ],
   "bin": {
-    "sf-mkhtml": "./mkhtml.js"
+    "sf-mkhtml": "./mkhtml.js",
+    "sf-make": "./index.js"
   },
   "author": "jdev082",
   "license": "MIT",
