@@ -1,5 +1,5 @@
 {
-  "name": "scratch-builder",
+  "name": "scratch3-builder",
   "version": "0.1.0",
   "description": "Builds a Scratch project into an HTML file",
   "main": "index.js",
