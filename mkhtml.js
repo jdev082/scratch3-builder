@@ -25,9 +25,11 @@ let mkHtmlLocal = async (f="project.sb3", o) => {
    return;
 }
 
-if (process.argv.length === 2) {
-   console.error('ERR: Expected at least one argument!');
-   process.exit(1);
- }
+if (require.main === module) {
+   if (process.argv.length === 2) {
+      console.error('ERR: Expected at least one argument!');
+      process.exit(1);
+   }
+   mkHtmlLocal(process.argv[2], process.argv[3])
+}
 
-mkHtmlLocal(process.argv[2], process.argv[3])

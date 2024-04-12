@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/jdev082/sf-mkhtml#readme",
   "dependencies": {
-    "@turbowarp/packager": "2.0.0"
+    "@turbowarp/packager": "2.0.0",
+    "config": "^3.3.11"
   }
 }
