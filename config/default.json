@@ -1,6 +1,7 @@
 {
     "makers": ["html"],
     "input": "project.sb3",
+    "turbo": "true",
     "html": {
         "out": "project.html"
     }

@@ -7,6 +7,7 @@
 
 const Packager = require('@turbowarp/packager');
 const fs = require('fs');
+const config = require('config');
 
 let writeHtmlLocal = async (r, o="out.html") => {
    fs.writeFile(o, r.data, (error) => {
@@ -19,6 +20,7 @@ let mkHtmlLocal = async (f="project.sb3", o) => {
    const projectData = fs.readFileSync(f);
    const loadedProject = await Packager.loadProject(projectData);
    const packager = new Packager.Packager();
+   packager.options.turbo = config.get("turbo");
    packager.project = loadedProject;
    const result = await packager.package();
    writeHtmlLocal(result, o);
