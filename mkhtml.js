@@ -21,6 +21,16 @@ let mkHtmlLocal = async (f="project.sb3", o) => {
    const loadedProject = await Packager.loadProject(projectData);
    const packager = new Packager.Packager();
    packager.options.turbo = config.get("turbo");
+   if (config.has("html.customJs")) {
+      packager.options.custom.js = 
+      fs.readFile(config.get("html.jsfile"), 'utf8', (err, data) => {
+         if (err) {
+           console.error(`ERR: ${err}`);
+           return;
+         }
+         return data;
+       });
+   }
    packager.project = loadedProject;
    const result = await packager.package();
    writeHtmlLocal(result, o);

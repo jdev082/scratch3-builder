@@ -3,6 +3,8 @@
     "input": "project.sb3",
     "turbo": "true",
     "html": {
-        "out": "project.html"
+        "out": "project.html",
+        "customJs": "true",
+        "jsfile": "test.js"
     }
 }
